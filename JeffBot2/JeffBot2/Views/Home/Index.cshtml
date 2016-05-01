@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="container">
+    <h2 class="form-signin-heading">Hi, I'm JeffBot</h2>
+    <div class="input-group">
+        <input type="text" id="inputArg" class="form-control" placeholder="Say something nice..." required autofocus>
+        <div class="input-group-btn">
+            <input type="button" value="Send" id="msgTrigger" class="btn btn-success">
+        </div>
+    </div>
+    <div id="messageQueue"></div>
+    <div class="message_info">Not getting a response? Try our <a href="https://groupme.com/join_group/21478794/zYbvId">GroupMe group</a> instead. If you know a little command line or coding, look at our <a href="https://github.com/ARMmaster17/JeffBot/wiki/How-can-I-use-JeffBot-in-my-code%3F">API docs</a>!</div>
+</div>
+<script>
+    $('#msgTrigger').on('click', function (e) { sendMessage(); });
+    $('#inputArg').on('keyup', function (e) {
+        if(e.keyCode == 13) {
+            sendMessage();
+        }
+    });
+
+    function sendMessage() {
+        var msg = $('#inputArg').val();
+        $('#inputArg').val("");
+        $("#messageQueue").prepend("<div class=\"message_container\"><div class=\"message_user\">" + msg + "</div></div>");
+        $.post("api/web", { arg: msg }, function (result) {
+            $("#messageQueue").prepend("<div class=\"message_container\"><div class=\"message_jeff\">" + result + "</div></div>");
+        });
+    }
+</script>

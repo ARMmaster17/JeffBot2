@@ -1,0 +1,50 @@
+﻿@model JeffBot2.Models.Nc
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Nc</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.A)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.B)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.B)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

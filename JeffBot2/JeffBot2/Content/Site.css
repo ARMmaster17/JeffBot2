@@ -1,0 +1,55 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.message_user {
+    /*width: 55%;*/
+    float: right;
+    background-color: #70db70;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.message_jeff {
+    /*width: 55%;*/
+    float: left;
+    background-color: #33cc33;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.message_container {
+    width: 100%;
+    float: left;
+    margin: 5px;
+}
+.message_info {
+    width: 100%;
+    float: left;
+    background-color: #0094f0;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+}
