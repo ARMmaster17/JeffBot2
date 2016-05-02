@@ -9,7 +9,6 @@ namespace JeffBot2Tools
 {
     public static class SentenceBuilder
     {
-
         /// <summary>
         /// Builds a sentence using the highest supported N-gram level. On missing link at N2, it will terminate.
         /// </summary>
@@ -48,8 +47,9 @@ namespace JeffBot2Tools
             {
                 return preld[0].B;
             }
-            preld.Sort((x, y) => x.Count.CompareTo(y.Count));
-            return preld[0].B;
+            //preld.Sort((x, y) => x.Count.CompareTo(y.Count));
+            Random r = new Random();
+            return preld[r.Next(0, preld.Count)].B;
         }
         private static string findNextToken(NcDBContext db, string a, string b)
         {
@@ -64,8 +64,9 @@ namespace JeffBot2Tools
             {
                 return preld[0].C;
             }
-            preld.Sort((x, y) => x.Count.CompareTo(y.Count));
-            return preld[0].C;
+            //preld.Sort((x, y) => x.Count.CompareTo(y.Count));
+            Random r = new Random();
+            return preld[r.Next(0, preld.Count)].C;
         }
         private static string findNextToken(NcDBContext db, string[] previousTokens)
         {

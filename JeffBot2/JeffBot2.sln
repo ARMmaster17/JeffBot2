@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBot2", "JeffBot2\JeffBot2.csproj", "{9FF199E7-B26F-4B93-86D5-24C07793F671}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E6F84249-0238-441C-B995-25F03B6A9B8F} = {E6F84249-0238-441C-B995-25F03B6A9B8F}
+		{D5592F70-3CE9-4BD7-A602-6040A0338A89} = {D5592F70-3CE9-4BD7-A602-6040A0338A89}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBot2.Tests", "JeffBot2.Tests\JeffBot2.Tests.csproj", "{3BAEED9F-BE09-47BD-8B5A-B6D769832E08}"
 EndProject
