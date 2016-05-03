@@ -15,6 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBot2Tools", "JeffBot2To
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBot2.Models", "JeffBot2.Models\JeffBot2.Models.csproj", "{D5592F70-3CE9-4BD7-A602-6040A0338A89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBot2BAPI", "JeffBot2BAPI\JeffBot2BAPI.csproj", "{8D682F64-C58C-4998-B8AE-045DB93B2A90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBot2BAPI.Tests", "JeffBot2BAPI.Tests\JeffBot2BAPI.Tests.csproj", "{FDD4F47E-DC68-4C6B-8E27-B247B41141C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBot2LAPI", "JeffBot2LAPI\JeffBot2LAPI.csproj", "{163CAD9A-1483-4772-A822-A85C241CD633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeffBot2LAPI.Tests", "JeffBot2LAPI.Tests\JeffBot2LAPI.Tests.csproj", "{867890B2-0267-4C65-9F20-9ECE924EDC5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +45,22 @@ Global
 		{D5592F70-3CE9-4BD7-A602-6040A0338A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5592F70-3CE9-4BD7-A602-6040A0338A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5592F70-3CE9-4BD7-A602-6040A0338A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D682F64-C58C-4998-B8AE-045DB93B2A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D682F64-C58C-4998-B8AE-045DB93B2A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D682F64-C58C-4998-B8AE-045DB93B2A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D682F64-C58C-4998-B8AE-045DB93B2A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD4F47E-DC68-4C6B-8E27-B247B41141C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD4F47E-DC68-4C6B-8E27-B247B41141C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD4F47E-DC68-4C6B-8E27-B247B41141C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD4F47E-DC68-4C6B-8E27-B247B41141C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163CAD9A-1483-4772-A822-A85C241CD633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163CAD9A-1483-4772-A822-A85C241CD633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163CAD9A-1483-4772-A822-A85C241CD633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163CAD9A-1483-4772-A822-A85C241CD633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867890B2-0267-4C65-9F20-9ECE924EDC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867890B2-0267-4C65-9F20-9ECE924EDC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867890B2-0267-4C65-9F20-9ECE924EDC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867890B2-0267-4C65-9F20-9ECE924EDC5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

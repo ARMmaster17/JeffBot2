@@ -12,7 +12,7 @@
         </div>
     </div>
     <div id="messageQueue"></div>
-    <div class="message_info">Not getting a response? Try our <a href="https://groupme.com/join_group/21478794/zYbvId">GroupMe group</a> instead. If you know a little command line or coding, look at our <a href="https://github.com/ARMmaster17/JeffBot/wiki/How-can-I-use-JeffBot-in-my-code%3F">API docs</a>!</div>
+    <div class="message_info">We are currently experience a heavy load on our servers. JeffBot2 may take a few seconds to respond. Remember that JeffBot2 works best when you only send one sentence at a time!</div>
 </div>
 <script>
     $('#msgTrigger').on('click', function (e) { sendMessage(); });
@@ -25,8 +25,10 @@
     function sendMessage() {
         var msg = $('#inputArg').val();
         $('#inputArg').val("");
-        $("#messageQueue").prepend("<div class=\"message_container\"><div class=\"message_user\">" + msg + "</div></div>");
-        $.post("api/web", { arg: msg }, function (result) {
+        $.get("http://jeffchatbot2learnapi.azurewebsites.net/api/learn", { arg: msg }, function (result) {
+            $("#messageQueue").prepend("<div class=\"message_container\"><div class=\"message_user\">" + msg + "<br>(" + result + ")</div></div>");
+        });
+        $.get("http://jeffchatbot2api.azurewebsites.net/api/build", { arg: msg }, function (result) {
             $("#messageQueue").prepend("<div class=\"message_container\"><div class=\"message_jeff\">" + result + "</div></div>");
         });
     }
