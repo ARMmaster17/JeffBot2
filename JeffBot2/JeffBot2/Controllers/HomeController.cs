@@ -20,9 +20,9 @@ namespace JeffBot2.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Information()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
