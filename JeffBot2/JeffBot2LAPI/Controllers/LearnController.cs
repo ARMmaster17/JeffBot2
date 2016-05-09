@@ -16,36 +16,42 @@ namespace JeffBot2LAPI.Controllers
 
         public string Get([FromUri]string arg)
         {
-            string carg = Sanitizer.clean(arg);
-            try
+            foreach (string varg in Sanitizer.splitSentences(arg))
             {
-                Learner.commit(db, Ngram.split(3, carg));
-            }
-            catch (NotEnoughTokensException e)
-            {
-                // Not enough tokens to commence learning.
-            }
-            catch (Exception e)
-            {
-                return e.ToString();
+                string carg = Sanitizer.clean(varg);
+                try
+                {
+                    Learner.commit(db, Ngram.split(3, carg));
+                }
+                catch (NotEnoughTokensException e)
+                {
+                    // Not enough tokens to commence learning.
+                }
+                catch (Exception e)
+                {
+                    return e.ToString();
+                }
             }
             return "200";
         }
 
         public string Post([FromBody]string arg)
         {
-            string carg = Sanitizer.clean(arg);
-            try
+            foreach (string varg in Sanitizer.splitSentences(arg))
             {
-                Learner.commit(db, Ngram.split(3, carg));
-            }
-            catch (NotEnoughTokensException e)
-            {
-                // Not enough tokens to commence learning.
-            }
-            catch (Exception e)
-            {
-                return e.ToString();
+                string carg = Sanitizer.clean(varg);
+                try
+                {
+                    Learner.commit(db, Ngram.split(3, carg));
+                }
+                catch (NotEnoughTokensException e)
+                {
+                    // Not enough tokens to commence learning.
+                }
+                catch (Exception e)
+                {
+                    return e.ToString();
+                }
             }
             return "200";
         }

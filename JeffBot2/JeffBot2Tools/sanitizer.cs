@@ -21,6 +21,10 @@ namespace JeffBot2Tools
                 }
                 return result.TrimEnd(' ').ToLower();
             }
+            public static string[] splitSentences(string query)
+            {
+                return query.Split(new string[] { ". " }, StringSplitOptions.RemoveEmptyEntries);
+            }
         }
     }
 }
